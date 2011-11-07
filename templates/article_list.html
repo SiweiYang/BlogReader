@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+    <meta name="generator" content="HTML Tidy for Linux (vers 11 August 2008), see www.w3.org">
+
+    <title></title>
+</head>
+
+<body>
+    <table>
+    
+    {% for article in article_list %}
+        <tr>
+            <td>
+            <a href="/article/{{ article.1 }}">{{ article.0 }}</a>
+            </td>
+        </tr>
+    {% endfor %}    
+    
+    </table>
+</body>
+</html>
